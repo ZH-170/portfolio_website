@@ -1,0 +1,25 @@
+header {
+    /* background-image: url('bg-img.jpeg'); */
+    background-size: 800px;
+}
+
+body {
+    margin: 100;
+    padding: 0;
+    height: 100%;
+    background-color: white;
+    overflow-y: auto; /* Makes vertical scrolling possible */
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    background: #73AD21;
+    border-radius: 25px;
+    padding: 20px;
+    width: 200px;
+    height: 20px;
+    float: none;
+    position: absolute;
+    left: 50%;
+}
