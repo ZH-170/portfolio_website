@@ -13,7 +13,7 @@ export default function App() {
         <>
         <Home />
         <h1>Ryan Lim Zi Heng</h1>
-        <div>
+        <div className="AboutMe">
             <h3>About Me: </h3>
             <AboutMe />
         </div>
@@ -26,7 +26,7 @@ export default function App() {
         <div>
             <h3>Achievements/Awards: </h3>
         </div>
-        <div>
+        <div className="Experience">
             <h3>Experiences: (lion dance team, EROHSS, Musical Instrument, Drawing, KCCC Cup) </h3>
         </div>
         <div>
