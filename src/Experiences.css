@@ -1,0 +1,25 @@
+.polaroid {
+    width: 80%;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+    margin-bottom: 25px;
+    flex: 1;
+}
+
+
+.container {
+    text-align: center;
+    padding: 10px 20px;
+}
+
+img {
+    width: 100%;
+}
+
+.all-polaroid {
+    display: flex;              /* Enable Flexbox */
+    justify-content: space-between; /* Space blocks evenly (optional) */
+    gap: 20px;                  /* Space between blocks */
+}
