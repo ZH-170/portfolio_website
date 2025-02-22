@@ -1,8 +1,9 @@
 import React from 'react';
 import './Achievements.css';
 
-import UECResultSlip from './image/UEC-result-slip.jpg';
-
+import UEC2024 from './image/UEC2024.jpg';
+import NSSPC2024 from './image/NSSPC2024.jpg';
+import TOP102024 from './image/TOP102024.jpg';
 import wolfImg from './image/wolf.jpg';
 
 export default function Achievements(){
@@ -28,26 +29,107 @@ export default function Achievements(){
     //     ]
     // ];
 
+    const achievementList = [
+        {
+            year: "2024",
+            academic: [
+                {name: "Science Stream Top 10 Academic Achievement", result: "#5", img: {TOP102024}}
+            ],
+            exam: [
+                {name: "Unified Examination Certificate (UEC)", result: "7A1, 2A2", img: {UEC2024}}
+            ],
+            competitions: [
+                {name: "National Secondary School Programming Contest (NSSPC)", result: "2nd Runner-up", img: {NSSPC2024}}
+            ]
+        },
+        {
+            year: "2025",
+            academic: [
+                {name: "Science Stream Top 10 Academic Achievement", result: "#5", img: {TOP102024}}
+            ],
+            exam: [
+                {name: "Unified Examination Certificate (UEC)", result: "7A1, 2A2", img: {UEC2024}}
+            ],
+            competitions: [
+                {name: "National Secondary School Programming Contest (NSSPC)", result: "2nd Runner-up", img: {NSSPC2024}}
+            ]
+        }
+    ];
+
+    
+
+    const achievementListItems = achievementList.map(x => (
+        <>
+            <div className={x.year % 2 === 0 ? 'Achievements-timeline-container left-container' : 'Achievements-timeline-container right-container'}>
+                
+                <img src={wolfImg} className="small-icon"/>                    
+                <div className="Achievements-timeline-container-textbox">
+                    <h2>{x.year}</h2>
+                    <small>2018 - 2019</small>
+                    <p> asdfghjkl The succes of every websites depends on search engine optimisation and digital marketing strategy. If you are pn first page of all major search...</p>
+
+
+                    { x.academic.length > 0 && <achievementRowItems row={x.academic} type='academic' /> }
+                    { x.exam.length > 0 && <achievementRowItems row={x.exam} type='exam' /> }
+                    { x.competitions.length > 0 && <achievementRowItems row={x.competitions} type='competitions' /> }
+
+
+                    <span className={x.year % 2 === 0 ? "left-container-arrow" : "right-container-arrow"}></span>
+
+                </div>
+            </div>
+        </>
+    ));
+
     return (
         <>
         <section id="awards">
-
             <div className="Achievements-timeline">
 
-                <div className="Achievements-timeline-container left-container">
-                    <img src={wolfImg} />
-                    <div className="Achievements-timeline-container-textbox">
-                        <h2>Alphabet Inc.</h2>
-                        <small>2018 - 2019</small>
-                        <p> The succes of every websites depends on search engine optimisation and digital marketing strategy. If you are pn first page of all major search...</p>
+                {achievementListItems}
 
+                <div className="Achievements-timeline-container left-container">
+                    <img src={wolfImg} className="small-icon"/>
+                    <div className="Achievements-timeline-container-textbox">
+                        <h2>2024</h2>
+                        {/* <small>2018 - 2019</small>
+                        <p> The succes of every websites depends on search engine optimisation and digital marketing strategy. If you are pn first page of all major search...</p>
+                         */}
+                        <div className="all-achievement-blocks">
+                            <div className="achievement-block">
+                                <div className="achievement">
+                                    <img className="certs" src={UEC2024}/>
+                                    <div className="achievements-container">
+                                        <p>UEC Result Slip</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div className="achievement-block">
+                                <div className="achievement">
+                                    <img  style={{width: '100%'}} />
+                                    <div className="achievements-container">
+                                        <p>UEC Result Slip</p>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div className="achievement-block">
+                                <div className="achievement">
+                                    <img style={{width: '100%'}} />
+                                    <div className="achievements-container">
+                                        <p>UEC Result Slip</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                         <span className="left-container-arrow"></span>
                     </div>
                 </div>
 
                 <div className="Achievements-timeline-container right-container">
-                    <img src={wolfImg} />
-                    <div className="Achievements-timeline-container-textbox">
+                    <img src={wolfImg} className="small-icon"/>                    <div className="Achievements-timeline-container-textbox">
                         <h2>Alphabet Inc.</h2>
                         <small>2018 - 2019</small>
                         <p> The succes of every websites depends on search engine optimisation and digital marketing strategy. If you are pn first page of all major search...</p>
@@ -59,7 +141,7 @@ export default function Achievements(){
                 
                 <div className="Achievements-timeline-container left-container">
                     
-                    <img src={wolfImg} />
+                <img src={wolfImg} className="small-icon"/>
                     <div className="Achievements-timeline-container-textbox">
                         <h2>Alphabet Inc.</h2>
                         <small>2018 - 2019</small>
@@ -71,7 +153,7 @@ export default function Achievements(){
                 </div>
 
                 <div className="Achievements-timeline-container right-container">
-                    <img src={wolfImg} />
+                <img src={wolfImg} className="small-icon"/>
                     <div className="Achievements-timeline-container-textbox">
                         <h2>Alphabet Inc.</h2>
                         <small>2018 - 2019</small>
@@ -85,7 +167,7 @@ export default function Achievements(){
 
                 <div className="Achievements-timeline-container left-container">
                     
-                    <img src={wolfImg} />
+                <img src={wolfImg} className="small-icon"/>
                     <div className="Achievements-timeline-container-textbox">
                         <h2>Alphabet Inc.</h2>
                         <small>2018 - 2019</small>
@@ -97,7 +179,7 @@ export default function Achievements(){
                 </div>
 
                 <div className="Achievements-timeline-container right-container">
-                    <img src={wolfImg} />
+                <img src={wolfImg} className="small-icon"/>
                     <div className="Achievements-timeline-container-textbox">
                         <h2>Alphabet Inc.</h2>
                         <small>2018 - 2019</small>
@@ -126,7 +208,7 @@ export default function Achievements(){
             <div className="all-achievements">
                 <div className="block">
                     <div className="achievements">
-                        <img src={UECResultSlip} style={{width: '100%'}} />
+                        <img src={UEC2024} style={{width: '100%'}} />
                         <div className="achievements-container">
                             <p>UEC Result Slip</p>
                         </div>
@@ -135,7 +217,7 @@ export default function Achievements(){
                 
                 <div className="block">
                     <div className="achievements">
-                        <img src={UECResultSlip} style={{width: '100%'}} />
+                        <img src={UEC2024} style={{width: '100%'}} />
                         <div className="achievements-container">
                             <p>UEC Result Slip</p>
                         </div>
@@ -144,7 +226,7 @@ export default function Achievements(){
 
                 <div className="block">
                     <div className="achievements">
-                        <img src={UECResultSlip} style={{width: '100%'}} />
+                        <img src={UEC2024} style={{width: '100%'}} />
                         <div className="achievements-container">
                             <p>UEC Result Slip</p>
                         </div>
@@ -158,3 +240,31 @@ export default function Achievements(){
 }
 
 //* can use this.setState => make the state of the cert be preview / clicked
+
+
+
+
+function achievementRowItems(prop) {
+    const type = 'ab';
+    const row = prop.row;
+
+    return(
+        <>
+            <small>abasdv</small>
+            <div className="all-achievement-blocks">
+
+
+                <div className="achievement-block">
+                    <div className="achievement">
+                        <img className="certs" src={UEC2024}/>
+                        <div className="achievements-container">
+                            <p>UEC Result Slip</p>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+        </>
+    );
+}

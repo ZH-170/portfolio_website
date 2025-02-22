@@ -21,9 +21,15 @@
 	line-height: 1.6;
 }
 
-.selfIntroImage {
+.selfIntroImg {
+	width: 600px;
 	max-width: 45%;
 	height: auto;
+}
+
+
+.selfIntro-background-shadow {
+	background: gray;
 }
 
 /* .Education ol, li{ 
@@ -240,3 +246,4 @@
 	  transform: translateY(-50%);
 	}
   }
+

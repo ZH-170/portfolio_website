@@ -1,7 +1,7 @@
 // import React from 'react';
 import React, { useRef, useEffect, useState } from 'react';
 import "./AboutMe.css";
-import SciImg from './image/p29m3e01.svg';
+import SelfImg from './image/Y-19353-2-edited.jpg';
 
 
 
@@ -22,9 +22,13 @@ export default function AboutMe() {
 
     return (
         <section id="aboutMe">
+            <div className='selfIntro-background-shadow'>
+                <h1>hi</h1>
+            </div>
             <div className='selfIntro'>
+    
                     <div className='selfIntroText'>
-                        <h3>Who Am I?</h3>
+                        <h1>Who Am I?</h1>
                         <p>
                         High-achieving student at Hin Hua High
             School with a strong passion for Life
@@ -37,7 +41,7 @@ export default function AboutMe() {
             of computer science and biochemistry.
                         </p>
                     </div>
-                    <img className='selfIntroImg' src={SciImg} />
+                    <img className='selfIntroImg' src={SelfImg} />
             </div>
             
             <div className="Education">
