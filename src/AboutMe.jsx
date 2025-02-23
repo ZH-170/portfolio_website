@@ -22,65 +22,64 @@ export default function AboutMe() {
 
     return (
         <section id="aboutMe">
-            <div className='selfIntro-background-shadow'>
-                <h1>hi</h1>
-            </div>
-            <div className='selfIntro'>
-    
-                    <div className='selfIntroText'>
-                        <h1>Who Am I?</h1>
-                        <p>
-                        High-achieving student at Hin Hua High
-            School with a strong passion for Life
-            Science and Computer Science.
-            A highly diligent and organized individual,
-            actively engaged in competitive
-            programming, with advanced skills in C++,
-            as well as in other science competitions.
-            Eager to delve deeper in both of the field
-            of computer science and biochemistry.
-                        </p>
-                    </div>
-                    <img className='selfIntroImg' src={SelfImg} />
-            </div>
-            
-            <div className="Education">
-
-                <h1>
-                    <span>Education</span>
-                </h1>
-
-                <div className="timeline-container">
-
-                    {/* <div className="text-block">
-                        <h1>Education Timeline</h1>
-                        <p>
-                            This is a horizontal timeline showing my educational journey. Click an item to highlight it!
-                        </p>
-                    </div> */}
-
-                    <div className="timeline-wrapper">
-                        <ol className="timeline">
-                            {educationBackground.map((item, index) => (
-                                <li
-                                key={index}
-                                className={index === activeIndex ? 'active' : ''}
-                                onClick={() => handleClick(index)}
-                                >
-                                    <span>{item.educationLevel}</span>
-                                </li>
-                            ))}
-                        </ol>
-                    </div>
-
-
+            <div className='AboutMe-container'>
+                <div className='selfIntro'>
+        
+                        <div className='selfIntroText'>
+                            <h1>Who Am I?</h1>
+                            <p>
+                            High-achieving student at Hin Hua High
+                School with a strong passion for Life
+                Science and Computer Science.
+                A highly diligent and organized individual,
+                actively engaged in competitive
+                programming, with advanced skills in C++,
+                as well as in other science competitions.
+                Eager to delve deeper in both of the field
+                of computer science and biochemistry.
+                            </p>
+                        </div>
+                        <img className='selfIntroImg' src={SelfImg} />
                 </div>
                 
-                {/* <ol>
-                    <li><span>SJK(C) Hin Hua</span></li>
-                    <li><span>Hin Hua High School</span></li>
-                    <li class="active"><span>Wrath of the Lich King</span></li>
-                </ol> */}
+                <div className="Education">
+
+                    <h1>
+                        <span>Education</span>
+                    </h1>
+
+                    <div className="timeline-container">
+
+                        {/* <div className="text-block">
+                            <h1>Education Timeline</h1>
+                            <p>
+                                This is a horizontal timeline showing my educational journey. Click an item to highlight it!
+                            </p>
+                        </div> */}
+
+                        <div className="timeline-wrapper">
+                            <ol className="timeline">
+                                {educationBackground.map((item, index) => (
+                                    <li
+                                    key={index}
+                                    className={index === activeIndex ? 'active' : ''}
+                                    onClick={() => handleClick(index)}
+                                    >
+                                        <span>{item.educationLevel}</span>
+                                    </li>
+                                ))}
+                            </ol>
+                        </div>
+
+
+                    </div>
+                    
+                    {/* <ol>
+                        <li><span>SJK(C) Hin Hua</span></li>
+                        <li><span>Hin Hua High School</span></li>
+                        <li class="active"><span>Wrath of the Lich King</span></li>
+                    </ol> */}
+                </div>
             </div>
 
 

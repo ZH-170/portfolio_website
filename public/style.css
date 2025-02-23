@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&family=Rasa:ital,wght@0,300..700;1,300..700&display=swap');
+
 header {
     /* background-image: url('bg-img.jpeg'); */
     background-size: 800px;
@@ -9,6 +11,7 @@ body {
     height: 100%;
     background-color: #151922;
     overflow-y: auto; /* Makes vertical scrolling possible */
+    font-family: 'Rasa';
 }
 
 nav {
