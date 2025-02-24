@@ -1,10 +1,37 @@
 import React from 'react';
 import './Contact.css';
 
+import phoneImg from './image/phone-call.png';
+import emailImg from './image/email.png';
+
 export default function Contact() {
     return (
         <section id="contact">
             <div className="contact">
+                <div className="contact-container" >
+
+                    <div className="contact-info">
+                        <div className="info phone">
+                            <div className="info-header">
+                                <img src={phoneImg} />
+                                <div className="info-text"><h1>Phone: </h1></div>
+                            </div>
+                        </div>
+                        <div className="info email">
+                            <div className="info-header">
+                                <img src={emailImg} />
+                                <div className="info-text"><h1>Email: </h1></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                
+            </div>
+
+            {/* <div className="contact">
                 <div className="contact-container">
                     <div className="contact-info-item">
                         <div className="icon"><i class="fa fa-envelope"></i></div>
@@ -72,7 +99,7 @@ export default function Contact() {
 
                     </div>
                 </div>
-            </div>
+            </div> */}
         </section>
     );
 }

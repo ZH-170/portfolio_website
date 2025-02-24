@@ -13,46 +13,60 @@ import AboutMe from './AboutMe.js';
 import Home from './Home.js';
 
 export default function App() {
+
+    const clickElement = () => {
+        // window.location.href = "https://www.google.com";
+        window.open("https://www.google.com", "_blank");
+    };
+
     return (
         <>
-            <Home />
-
-            <div className="AboutMe">
-                <AboutMe />
+            <div className="navigation-bar">
+                <a href="#home" onClick={clickElement}>Home</a>
+                <a className="active" href="https://www.google.com" >About</a>
             </div>
 
-            <div>
-                <h3>Skills: </h3>
-                <Skills />
-            </div>
+            <div className="app-container">
+                {/* <Home /> */}
 
-            <div className="Experience">
-                <h3>Experiences: (lion dance team, EROHSS, Musical Instrument, Drawing, KCCC Cup) </h3>
-                <Experiences />
-            </div>
+                <div className="AboutMe">
+                    <h1 className="div-title">About Me</h1>
+                    <AboutMe />
+                </div>
 
-            
-            <div className="Achievements">
-                <h3>Achievements/Awards: </h3>
-                <Achievements />
-            </div>
+                <div className="Skills">
+                    <h1 className="div-title">Skills</h1>
+                    <Skills />
+                </div>
 
-            <div>
-                <h3>Files (Resume & Personal Statement) :</h3>
-            </div>
+                <div className="Experience">
+                    <h1 className="div-title">Experiences</h1>
+                    <Experiences />
+                </div>
 
-            <div>
-                <h3>Contact: </h3>
-                <Contact />
-            </div>
+                
+                <div className="Achievements">
+                    <h3>Achievements/Awards: </h3>
+                    {/* <Achievements /> */}
+                </div>
 
-            <div>
-                <h3>Send me email: </h3>
-            </div>
+                <div>
+                    <h3>Files (Resume & Personal Statement) :</h3>
+                </div>
 
-            <Fade>
-                <h3>heheboi</h3>
-            </Fade>
+                <div className="Contact">
+                    <h1 className="div-title">Contact Me</h1>
+                    <Contact />
+                </div>
+
+                <div>
+                    <h3>Send me email: </h3>
+                </div>
+
+                <Fade>
+                    <h3>heheboi</h3>
+                </Fade>
+            </div>
         </>
     );
 }

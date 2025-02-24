@@ -7,26 +7,85 @@
 	padding: 20px;
 }
 
-.selfIntroText {
-	max-width: 50%;
-	padding-right: 20px;
+.selfIntroInfo{
+	margin: 10px;
+	width: 760px;
+	/* background: gray; */
+
 }
 
-.selfIntroText h3 {
-	margin: 0 0 10px 0;
+.selfIntroInfo-title {
+	margin-bottom: 5px;
+	color: #d3d9d4;
+	font-size: 30px;
+}
+
+.selfIntroText {
+	width: 100%;
+	/* background: black; */
+	padding-right: 20px;
+	color: #D3D9D4;
+}
+
+.selfIntroInfo-text-container{
+
+	border: 2px solid #748d92;
 }
 
 .selfIntroText p {
-	margin: 0;
+	font-size: 20px;
+	border-radius: 2em;
+	margin: 10px;
 	line-height: 1.6;
 }
 
 .selfIntroImg {
-	width: 600px;
+	width: 400px;
 	max-width: 45%;
 	height: auto;
 }
 
+.education-container{
+	/* background: white; */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1200px;
+	/* margin: 0 auto; */
+	/* padding: 20px; */
+}
+
+.primary-education, .secondary-education{
+	flex: 1;
+	background-color: #748d92;
+	border: 2px solid gray;
+	/*  748d92 124e66*/
+	padding: 10px;
+	
+	margin: 10px;
+	text-align: center;
+	border-radius: 2em;
+}
+
+.primary-education a, .secondary-education a{
+	opacity: 0;
+}
+
+.primary-education:hover a, .secondary-education:hover a{
+	opacity: 1;
+}
+
+.primary-education:hover, .secondary-education:hover{
+
+	background-color: #2e3944;
+	color: #d3d9d4
+}
+
+
+
+.primary-education p, .primary-education h1, .secondary-education p, .secondary-education h1{
+	margin: 0px;
+}
 
 
 /* .Education ol, li{ 
@@ -100,7 +159,6 @@
 .Education ol li.active:after {
   background-color: #222222;
 } */
-
 
 /* EducationTimeline.css */
 .timeline-container {

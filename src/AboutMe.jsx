@@ -19,43 +19,73 @@ export default function AboutMe() {
         setActiveIndex(index);
     };
 
+    const clickSecondaryEducationEng = () => {
+        // window.open("https://hinhua.edu.my");
+        window.open("https://hinhua.edu.my/eng/home.html", "_blank");
+    }
+    const clickSecondaryEducationChn = () => {
+        // window.open("https://hinhua.edu.my");
+        window.open("https://hinhua.edu.my/cn/index.html", "_blank");
+    }
+
+    const clickPrimaryEducation = () => {
+        window.open("https://sjkchinhuaklang.wordpress.com/", "_blank");
+    }
 
     return (
         <section id="aboutMe">
             <div className='AboutMe-container'>
                 <div className='selfIntro'>
-        
-                        <div className='selfIntroText'>
-                            <h1>Who Am I?</h1>
-                            <p>
-                            High-achieving student at Hin Hua High
-                School with a strong passion for Life
-                Science and Computer Science.
-                A highly diligent and organized individual,
-                actively engaged in competitive
-                programming, with advanced skills in C++,
-                as well as in other science competitions.
-                Eager to delve deeper in both of the field
-                of computer science and biochemistry.
-                            </p>
+                        <div className="selfIntroInfo">
+                            <div className='selfIntroText'>
+                                <h1 className="selfIntroInfo-title">Who Am I?</h1>
+                                    
+                                <div className="selfIntroInfo-text-container">
+                                    <p>
+                                    High-achieving student at Hin Hua High
+                        School with a strong passion for Life
+                        Science and Computer Science.
+                        A highly diligent and organized individual,
+                        actively engaged in competitive
+                        programming, with advanced skills in C++,
+                        as well as in other science competitions.
+                        Eager to delve deeper in both of the field
+                        of computer science and biochemistry.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <h1 className="selfIntroInfo-title">Education</h1>
+                            <div className="education-container">
+                                <div className="primary-education">
+                                    
+                                    <p>Primary Education: 2013~2018</p>
+                                    <h1>SJK(C) Hin Hua</h1>
+                                    <a onClick={clickPrimaryEducation}>This website doesn't have an English version.</a>
+                                </div>
+                                <div className="secondary-education">
+                                    <p>Secondary Education: 2019~2024</p>
+                                    <h1>Hin Hua High School</h1>
+                                    <a onClick={clickSecondaryEducationEng}>English  /  </a>
+                                    <a onClick={clickSecondaryEducationChn}>    Chinese</a>
+                                </div>
+                                
+                            </div>
                         </div>
                         <img className='selfIntroImg' src={SelfImg} />
                 </div>
                 
                 <div className="Education">
 
-                    <h1>
-                        <span>Education</span>
-                    </h1>
 
-                    <div className="timeline-container">
+                    {/* <div className="timeline-container">
 
-                        {/* <div className="text-block">
+                        <div className="text-block">
                             <h1>Education Timeline</h1>
                             <p>
                                 This is a horizontal timeline showing my educational journey. Click an item to highlight it!
                             </p>
-                        </div> */}
+                        </div>
 
                         <div className="timeline-wrapper">
                             <ol className="timeline">
@@ -72,7 +102,8 @@ export default function AboutMe() {
                         </div>
 
 
-                    </div>
+                    </div> */}
+
                     
                     {/* <ol>
                         <li><span>SJK(C) Hin Hua</span></li>

@@ -5,6 +5,7 @@ import UEC2024 from './image/UEC2024.jpg';
 import NSSPC2024 from './image/NSSPC2024.jpg';
 import TOP102024 from './image/TOP102024.jpg';
 import wolfImg from './image/wolf.jpg';
+import blankImg from './image/blank.png';
 
 export default function Achievements(){
     const examsList = [
@@ -132,7 +133,7 @@ export default function Achievements(){
         <>
             <div className={x.year % 2 === 0 ? 'Achievements-timeline-container left-container' : 'Achievements-timeline-container right-container'}>
                 
-                <img src={wolfImg} className="small-icon"/>                    
+                <img src={blankImg} className="small-icon"/>                    
                 <div className="Achievements-timeline-container-textbox">
                     <h2>{x.year}</h2>
                     { x.academic.length > 0 && <AchievementRowItems row={x.academic} type='academic' /> }

@@ -1,11 +1,60 @@
 .AboutMe {
-    background-color: #d4d9dd;
+    /* background-color: #d4d9dd; */
+    /* background: #ff6b6b; */
+}
+
+.Skills {
+    /* background: rgba(150, 201, 61, 0.3); */
 }
 
 .Experience {
     /* background-color: #EEEEFF; */
+    /* background: #4ecdc4; */
+    background: none;
 }
 
 .Achievements {
     background-color: #2e364a;
+}
+
+.app-container {
+    scroll-snap-type: y mandatory;
+    width: 95%;
+    /* background: white; */
+    /* height: 100px; */
+    margin: 20px auto;
+    /* white-space: nowrap; */
+    /* aspect-ratio: 1/1; */
+    /* overflow-x: scroll; */
+    overflow-y: auto;
+    /* border: solid black 2px; */
+}
+
+.app-container div{
+    /* display: none; */
+    /* height: 80%; */
+    /* border-radius: 10%; */
+    /* aspect-ratio: 1/1; */
+    /* margin: 5px; */
+    scroll-snap-align: center;
+    /* justify-content: center; */
+}
+
+
+.div-title{
+    text-align: center;
+    color: #748d92;
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+
+.navigation-bar {
+    color: white;
+    
+}
+
+.section-title-name {
+    color: #d3d9d4;
+    text-align: center;
+    border-bottom: 1px solid #d3d9d4;
 }

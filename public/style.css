@@ -2,17 +2,19 @@
 
 header {
     /* background-image: url('bg-img.jpeg'); */
-    background-size: 800px;
+    /* background-size: 800px; */
 }
 
 body {
     margin: 100;
     padding: 0;
     height: 100%;
-    background-color: #151922;
+    /* background-color: #212A31; */
+    background-color: #2E3944;
     overflow-y: auto; /* Makes vertical scrolling possible */
     font-family: 'Rasa';
 }
+
 
 nav {
     position: fixed;
@@ -28,37 +30,41 @@ nav {
 }
 
 .svg1 path {
-    stroke: white;
+    stroke: #D3D9D4;
     stroke-width: 10px;
     fill: none;
 }
 
 .svg1 {
-    width: 650px;
+    /* background: gray; */
+    width: 600px;
+    height: 700px;
 }
 
 .svg2 {
-    width: 500px;
+    /* background: gray; */
+    width: 600px;
+    height: 700px;
 }
 
 .svg2 path {
-    stroke: white;
+    stroke: #D3D9D4;
     stroke-width: 18px;
     fill: none;
 }
 
 .homePage {
     width: 100%;
-    height: 800px;
+    height: 680px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 0.1px;
+    grid-template-columns: 2fr 1fr 2fr;
     margin: 0 auto;
-    background-color: #151922;
+    /* background-color: #151922; */
 }
 
 .homePagePic {
     width: 80%;
+
     /* background-color: white; */
     /* text-align: center; */
     /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
@@ -73,13 +79,21 @@ nav {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    width: 500px;
+    width: 300px;
+    /* background: lightgray; */
     flex-direction: column;
 }
 
-.homePageName h1, h2, h4{
+.homePageName h1, h2{
     margin: 1px;
     animation: fadeIn 3s ease-in-out forwards;
+    color: #D3D9D4;
+}
+
+.homePageName h4{
+    margin: 1px;
+    animation: fadeIn 3s ease-in-out forwards;
+    color: #748D92;
 }
 
 @keyframes fadeIn {
