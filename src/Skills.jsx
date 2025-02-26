@@ -9,6 +9,12 @@ import erhu from './image/erhu.png';
 import piano from './image/piano.png';
 import guitar from './image/guitar.png';
 
+import painting1 from './image/painting1.jpg';
+import painting2 from './image/painting2.jpg';
+import painting3 from './image/painting3.jpg';
+import painting4 from './image/painting4.jpg';
+
+
 function getRandomColor() {
     let letters = "0123456789ABCDEF";
     let color = "#";
@@ -160,7 +166,7 @@ export default function Skills() {
 
 
                 <div className="skill-column skill-drawing">
-                    <h1>Drawing</h1>
+                    <h1>Drawings</h1>
                     <div className="skill-img2" onClick={handlePopupDrawing} >
                         <img src={DrawingImg} />
                     </div>
@@ -172,11 +178,16 @@ export default function Skills() {
                         <div className="skill-popup-header">
                             <h1>Drawing</h1>
                             <button className="close-button" onClick={handlePopupDrawing}>&times;</button>
+
                         </div>
                         
                         <h1 className="skill-text-title">Art Works</h1>
                         <div className="skill-type">
-                            <img src={piano} className="programmingLanguageIcons"/>
+                            <img src={painting2} className="Drawings"/>
+                            <img src={painting3} className="Drawings"/>
+                            <img src={painting4} className="Drawings"/>
+                            
+                            <img src={painting1} className="Drawings2"/>
                         </div>
                         <div className="skill-text-container">
                             

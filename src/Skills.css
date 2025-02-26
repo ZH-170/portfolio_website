@@ -48,6 +48,13 @@
 	height: 100px;
 }
 
+.Drawings {
+	width: 320px;
+}
+
+.Drawings2 {
+	width: 500px;
+}
 .skills-container{
 	/* background: gray; */
 	margin: 10px;
@@ -91,6 +98,7 @@
 	color:#2e3944;
 
 }
+
 .skill-coding-popup-container .close-button {
     cursor: pointer;
     border: none;
