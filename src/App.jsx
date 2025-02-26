@@ -3,15 +3,15 @@ import ReactDOM from 'react-dom';
 import Zoom from 'react-reveal/Zoom';
 import Slide from 'react-reveal/Slide';
 import Fade from 'react-reveal/Fade';
-import Contact from './Contact.js';
-import Skills from './Skills.js';
-import Experiences from './Experiences.js';
-import Achievements from './Achievements.js';
-import File from './File.js';
+import Contact from './Contact.jsx';
+import Skills from './Skills.jsx';
+import Experiences from './Experiences.jsx';
+import Achievements from './Achievements.jsx';
+import File from './File.jsx';
 
 import "./App.css";
-import AboutMe from './AboutMe.js';
-import Home from './Home.js';
+import AboutMe from './AboutMe.jsx';
+import Home from './Home.jsx';
 // import MenuIcon from './image/748d92_menu.png';
 import MenuIcon from './image/d3d9d4_menu.png';
 

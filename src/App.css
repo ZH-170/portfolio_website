@@ -9,16 +9,16 @@
     /* background: rgba(150, 201, 61, 0.3); */
 }
 
-.Experience {
-    /* background-color: #EEEEFF; */
-    /* background: #4ecdc4; */
-    /* background: none; */
-}
+/* .Experience {
+    background-color: #EEEEFF;
+    background: #4ecdc4;
+    background: none;
+} */
 
-.Achievements {
-    /* background-color: #2e364a; */
+/* .Achievements {
+    background-color: #2e364a;
 
-}
+} */
 
 .app-container {
     scroll-snap-type: y mandatory;
