@@ -1,0 +1,1 @@
+export default "/dist/image/UEC2024.jpg";

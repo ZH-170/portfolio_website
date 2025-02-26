@@ -1,0 +1,1 @@
+export default "/dist/image/liondance/liondance2.jpg";

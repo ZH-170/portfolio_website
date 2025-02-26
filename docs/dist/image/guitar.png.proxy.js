@@ -1,0 +1,1 @@
+export default "/dist/image/guitar.png";
