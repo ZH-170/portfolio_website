@@ -6,5 +6,8 @@ module.exports = {
   mount: {
     'public': '/',
     'src': '/dist'
+  },
+  buildOptions: {
+    out: 'docs'  // Build directly to docs/
   }
 }
