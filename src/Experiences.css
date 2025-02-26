@@ -24,7 +24,7 @@
 .Experience-container {
     /* background-color: white; */
     width: 80%;
-    height: 300px;
+    height: 280px;
     padding: 1em;
     display: flex;
     left: 50%;
@@ -46,6 +46,7 @@
     border-radius: 2em;
     box-shadow: 3px 4px 100px 0 rgba(211, 217, 212, 0.5), -5px -4px 100px 0 rgba(211, 217, 212, 0.5);
     opacity: 70%;
+    background: black
 }
 
 .row1-col-right , .row2-col-left{
@@ -56,7 +57,6 @@
 }
 
 .row1-col-right:hover, .row2-col-left:hover{
-    flex: 1;
     /* border: 2px solid red; */
     border-radius: 2em;
     box-shadow: 3px 4px 100px 0 rgba(255, 255, 255, 0.5), -5px -4px 100px 0 rgba(255, 255, 255, 0.5);
@@ -89,10 +89,11 @@
     z-index: 10;
     border-radius: 25px;
     overflow-y: scroll;
-    max-height: 600px;
+    max-height: 500px;
+    margin: 30px;
 
     /* text-align: center; */
-    padding: 0 30px 30px;
+    padding: 30px;
 }
 
 .Experience-popup .popup1::-webkit-scrollbar {
@@ -176,7 +177,7 @@
     padding: 0px 15px 2px 15px;
     color: #d3d9d4;
     font-size: 20px;
-    height: 10000px;
+    /* height: 1000px; */
 }
 
 #overlay {
@@ -193,7 +194,7 @@
 .inset-shadow {
 
     border-radius: 25px;
-    box-shadow: inset 50px 50px 200px #2e3944, inset -50px -50px 200px #2e3944;
+    box-shadow: inset 50px 50px 200px #124e66, inset -50px -50px 200px #124e66;
     /* box-shadow: inset 100px 100px 200px #212a31, inset -100px -100px 200px #212a31; */
 
 
@@ -280,10 +281,34 @@
 }
 
 .popup-img{
-    width: 20%;
+    width: 32%;
     padding: 5px;
 }
 
+.popup-more-info {
+    background: none;
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 2em;
+    margin: 10px;
+
+    color: #212a31;
+    font-weight: 500px;
+    border: 2px solid #212a31;
+    
+}
+
+.popup-more-info:hover {
+    background-color: #212a31;
+    color: #d3d9d4;
+}
 /* .row2-col-left:hover, .row1-col-left:hover, .row2-col-right:hover */
 /* 
 #overlay.active{

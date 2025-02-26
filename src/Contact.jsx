@@ -9,13 +9,49 @@ export default function Contact() {
         <section id="contact">
             <div className="contact">
                 <div className="contact-container" >
+                    <div className="contact-info">
+                        <div className="contact-header header1" >
+                            <div className="info-img">
+                                <img src={phoneImg}/>
+                            </div>
+                            <div className="info-title">
+                                <h2>Phone:</h2>
+                            </div>
+                            <div className="info-title">
+                                <h3>+60-183703393</h3>
+                            </div>
+                        </div>
+                        {/* <div className="contact-text">
+                            <h1>abc</h1>
+                        </div> */}
+                    </div>
 
                     <div className="contact-info">
+                        <div className="contact-header header2" >
+                            <div className="info-img">
+                                <img src={emailImg}/>
+                            </div>
+                            <div className="info-title">
+                                <h2>Email: </h2>
+                            </div>
+                            <div className="info-title">
+                                <h3>zihenglim0710@gmail.com </h3>
+                            </div>
+                        </div>
+                        {/* <div className="contact-text">
+                            <h1>abc</h1>
+                        </div> */}
+                    </div>
+
+
+                    {/* <div className="contact-info">
                         <div className="info phone">
                             <div className="info-header">
-                                <img src={phoneImg} />
+                                <div className="info-text"><img src={phoneImg} /></div>
+
                                 <div className="info-text"><h1>Phone: </h1></div>
                             </div>
+                            <h1>+60-183703393</h1>
                         </div>
                         <div className="info email">
                             <div className="info-header">
@@ -23,8 +59,11 @@ export default function Contact() {
                                 <div className="info-text"><h1>Email: </h1></div>
                             </div>
                         </div>
-                    </div>
-
+                    </div> */}
+{/* 
+                <div className="contact-email">
+                    halo
+                </div> */}
 
 
                 </div>

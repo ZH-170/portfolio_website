@@ -62,12 +62,15 @@
 .skill-coding-popup-container {
 	/* opacity: 0; */
 	position: absolute;
-	background: lightgray;
+	/* background: lightgray; */
+	background-color: rgba(211, 217, 212, 0.7);
 	
+    overflow-y: scroll;
 	width: 80%;
-	max-height: 100%;
+	/* max-height: 100%; */
+    max-height: 550px;
 	/* z-index: 2; */
-	z-index: 2;
+	z-index: 6;
 	border-radius: 2em;
 	padding: 0px 10px 30px 10px;
 }
@@ -80,8 +83,14 @@
     align-items: center;
     /* border-bottom: 1px solid black; */
     opacity: 1;
-}
+	
+	height: 80px;
+	margin-bottom: 0px;
+	
+	font-size: 30px;
+	color:#2e3944;
 
+}
 .skill-coding-popup-container .close-button {
     cursor: pointer;
     border: none;
@@ -155,17 +164,24 @@
 
 .skill-text{
 	margin: 20px;
-	background: red;
+	/* background: red; */
+	color:#2e3944;
+
 }
 
 .skill-text {
+	margin-top: 0px;
 	font-size: 19px;
 }
 
 .skill-text-title{ 
 	margin-left: 20px;
 	padding-top: 10px;
+	padding-bottom: 0;
+	margin-bottom: 0;
 	font-size: 25px;
+	/* background: green; */
+	color:#2e3944;
 }
 
 .skill-type img{
@@ -175,27 +191,8 @@
 .skill-text-container {
 	max-height: 100%;
 }
-/* .skill-text-and-type {
-	position: absolute;
-}
-.skill-text {
-	position: absolute;
-	
-	align-items: center;
-	background: blue;
-	width: 97%;
-	margin: 10px;	
-	opacity: 0;
 
-	transition-delay: .35s;
-	transition: 2s zoom-in-out;
-}
 
-.skill-type {
-	opacity: 0;
-	background: green;
-	
-} */
 
 .skill-img {
 	
@@ -243,12 +240,8 @@
 	opacity: 1;
 }
 
-.ah {
-	background: red;
-}
 
-
-#overlay {
+.skill-overlay {
     position: fixed;
     opacity: 1;
     top: 0;
@@ -257,4 +250,42 @@
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.3);
     pointer-events: all;
+	z-index: 5;
+	overflow: hidden;
+}
+
+
+.skill-coding-popup-container::-webkit-scrollbar {
+    width: 8px;
+    height: 30000000000000000px;
+    /* background: black; */
+
+    display: block;
+    overflow: scroll;
+    /* height: 20000em; */
+    padding: 1em;
+    margin: 1em auto;
+  /* outline: 2px dashed cornflowerblue; */
+    
+}
+.skill-coding-popup-container::-webkit-scrollbar-track {
+    /* background: white; */
+    margin: 40px;
+    height: 2000000000px;
+    
+}
+
+.skill-coding-popup-container::-webkit-scrollbar-thumb {
+    /* background: #2e3944; */
+    background: rgba(46, 57, 68, 0.5);
+    border-radius: 2em;
+    height: 10px;
+    /* 2e3944  748d92*/
+    /* 46 57 68 */
+}
+
+.skill-coding-popup-container::-webkit-scrollbar-thumb:hover {
+    background: rgba(46, 57, 68, 1);
+
+    opacity: 1;
 }

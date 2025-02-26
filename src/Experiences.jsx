@@ -7,6 +7,14 @@ import EROHSSImg from './image/EROHSS.jpg';
 import SciCampImg from './image/SciCampImg.jpg';
 import MOImg from './image/MO.jpg';
 
+import liondance1 from './image/liondance/liondance1.jpg';
+import liondance2 from './image/liondance/liondance2.jpg';
+import liondance3 from './image/liondance/liondance3.jpg';
+import liondance4 from './image/liondance/liondance4.jpg';
+import liondance5 from './image/liondance/liondance5.jpg';
+
+// import { faSearch } from '../node_modules/@fortawesome/free-solid-svg-icons/faSearch.js';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome/index';
 // const openPopup = document.querySelectorAll()
 
 
@@ -55,6 +63,18 @@ export default function Experiences() {
     const handleClosePopup4 = () => {
         setIsPopup4Open(false); // Open first popup
         setIsOverlayOpen(false); // Open second popup
+    }
+
+    const handle6anluckIg = () => {
+        window.open("https://www.instagram.com/6anluck_/", "_blank");
+    }
+
+    const handleDongZong = () => {
+        window.open("https://www.dongzong.my/en/home/", "_blank");
+    }
+
+    const handleEROHSS = () => {
+        window.open("https://www.monash.edu.my/engineering/news-and-events/articles/2024/erohss-shapes-young-minds-for-research", "_blank");
     }
 
     return (
@@ -108,12 +128,23 @@ export default function Experiences() {
                                     <button className="close-button" onClick={handleClosePopup1}>&times;</button>
                                 </div>
                                 <div className="popup-body">
+                                    <img src={liondance3} className="popup-img" />
+                                    <img src={liondance4} className="popup-img" />
+                                    <img src={liondance5} className="popup-img" />
+                                    <br />
                                     <p>The lion dance performance is a Chinese tradition in my country and is often seen during the Lunar New Year. At my high school, the lion dance troupe is an important annual tradition. Starting at the end of the previous year, students are recruited and undergo daily training in teams for three to four months. During the Lunar New Year, the troupe performs outside of school to raise funds, making it an iconic event for our school.</p>
                                     <p>In the year end of 2022, I have participated in this event, and that brings a lot of memorable experience to me. At the first time when I met my teammates, we were all strangers from different classes and different age, scarcely seen each other in school. However, after months of training together, we became as close as siblings, as close as brothers. We trained together, played together, ate together. They are the one that I love and I trust by the time. During the tough training, I gained persistence. Tough trainings will always make us to have the idea of giving up, but after taking a look at my teammates, seeing some of them that are younger than me still insisting, and that’s when the idea of giving up disappears, and all that left is the motivation and encouragement of my teammates.</p>
                                     <p>At the beginning of 2023, during the Lunar New Year, my team went outside the school, started our performance at all kinds of houses and restaurants and companies for 15 days, 5 to 8 performance a day. </p>
-                                    <img src={MOImg} className="popup-img" />
-                                    <img src={MOImg} className="popup-img" />
 
+
+                                    
+                                    <div className="popup-more-info" onClick={handle6anluckIg}>Instagram</div>
+
+
+                                    <br />
+                                    
+                                    <img src={liondance1} className="popup-img" />
+                                    <img src={liondance2} className="popup-img" />
 
 
 
@@ -130,8 +161,16 @@ export default function Experiences() {
                                     <button className="close-button" onClick={handleClosePopup2}>&times;</button>
                                 </div>
                                 <div className="popup-body">
-                                    <h1>Halo</h1>
-                                    <p>This is a text.</p>
+                                    
+                                    <p>In 2023, I had the opportunity to participate in the Engineering Research Opportunities for High School Students (EROHSS) program at Monash University Malaysia. This initiative offers high school students hands-on experience in university-level research, covering topics from renewable energy to advanced nanomaterials.</p>
+                                    <p>Given the competitive nature of the program, with only three spots allocated to my school, I was honored to be selected after a rigorous interview process. Assigned to the Department of Chemical Engineering, I worked under the guidance of Ms. Sia Chin Siew on a project titled "Magnetic-Controllable Pickering Emulsion: Futuristic Platform for Drug Delivery." This study focused on developing emulsions stabilized by magnetic nanoparticles to control drug release rates using external magnetic fields.</p>
+                                    <p>Before stepping into the lab, I dedicated time to thoroughly understand the research paper associated with my project. I delved into every detail, familiarizing myself with new terminologies and concepts, and prepared a list of questions to discuss with my supervisor.</p>
+                                    <p>On the lab day, the environment was both exhilarating and enlightening. Under Ms. Sia's supervision, I was introduced to advanced equipment and techniques, many of which were new to me. The hands-on experience deepened my appreciation for experimental research, and I successfully replicated the study's results, confirming the potential of magnetic Pickering emulsions in controlled drug delivery.</p>
+                                    <p>Following the experimental phase, I faced the challenge of composing my first full-length research paper and preparing a presentation. Despite initial difficulties, I completed these tasks before the deadline. Presenting my findings to an audience was initially daunting, but as I progressed, my confidence grew, and I delivered a coherent and engaging presentation. The program concluded with a ceremony where I received a participation certificate, marking the end of a transformative journey.</p>
+                                    <p>This experience has been pivotal in solidifying my passion for scientific inquiry and has inspired me to pursue further opportunities in research and experimentation.</p>
+
+                                    <div className="popup-more-info" onClick={handleEROHSS}>EROHSS</div>
+
                                 </div>
                             </div>
                         )}
@@ -146,6 +185,7 @@ export default function Experiences() {
                                     <h1>Halo</h1>
                                     <p>This is a text.</p>
                                 </div>
+                            
                             </div>
                         )}
 
@@ -156,8 +196,10 @@ export default function Experiences() {
                                     <button className="close-button" onClick={handleClosePopup4}>&times;</button>
                                 </div>
                                 <div className="popup-body">
-                                    <h1>Halo</h1>
-                                    <p>This is a text.</p>
+                                    <p>The MICSS Science Camp is an annual event organized by Dong Zong, involving most of the top Chinese independent schools in Malaysia. Each year, the camp has a main theme and corresponding subject(s), and each school can send up to six representatives who have demonstrated outstanding performance in those subjects. The representatives gather at the hosting school and spend five days and four nights participating in the camp. The event features knowledge-sharing sessions conducted by professors in the respective fields, as well as competitions where students can showcase their abilities. However, due to the pandemic, the camp was canceled for several years before finally resuming in 2023.</p>
+
+                                    <div className="popup-more-info" onClick={handleDongZong}>DongZong</div>
+
                                 </div>
                             </div>
                         )}
