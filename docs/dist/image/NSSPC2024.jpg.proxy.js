@@ -1,1 +1,0 @@
-export default "/dist/image/NSSPC2024.jpg";

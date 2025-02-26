@@ -1,1 +1,0 @@
-export default "/dist/image/TOP102024.jpg";

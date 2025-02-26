@@ -1,1 +1,0 @@
-export default "/dist/image/d3d9d4_menu.png";

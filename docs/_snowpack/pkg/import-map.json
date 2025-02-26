@@ -1,9 +1,0 @@
-{
-  "imports": {
-    "react": "./react.js",
-    "react-dom": "./react-dom.js",
-    "react-reveal/Fade": "./react-reveal/Fade.js",
-    "react-reveal/Slide": "./react-reveal/Slide.js",
-    "react-reveal/Zoom": "./react-reveal/Zoom.js"
-  }
-}

@@ -1,1 +1,0 @@
-export default "/dist/image/Y-19353-2-edited.jpg";

@@ -1,1 +1,0 @@
-export default "/dist/image/canvas.png";
